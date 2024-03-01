@@ -1,4 +1,5 @@
 import '../assets/styles/global.css'
+import NavBar from '../components/NavBar';
 
 export const metadata = {
 	  title: 'Task Manager App',
@@ -10,7 +11,8 @@ const MainLayout = ({children}) => {
 	  return (
 	<html lang={'en'}>
 	<body>
-	<div> {children} </div>
+		<NavBar />
+	<main> {children} </main>
 	</body>
 
 	</html>
