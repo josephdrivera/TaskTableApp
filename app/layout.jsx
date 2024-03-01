@@ -1,5 +1,6 @@
 import '../assets/styles/global.css'
-import NavBar from '../components/NavBar';
+import Sidebar from './ui/sidebar'
+
 
 export const metadata = {
 	  title: 'Task Manager App',
@@ -11,7 +12,7 @@ const MainLayout = ({children}) => {
 	  return (
 	<html lang={'en'}>
 	<body>
-		<NavBar />
+	<Sidebar />
 	<main> {children} </main>
 	</body>
 
