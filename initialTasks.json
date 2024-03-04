@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Design Homepage",
+    "description": "Create a responsive homepage design",
+    "dueDate": "2023-12-20",
+    "priority": "High",
+    "status": "In Progress",
+    "assignee": "Alex"
+  },
+  {
+    "id": 2,
+    "name": "Database Backup",
+    "description": "Perform a backup of the entire database",
+    "dueDate": "2023-12-22",
+    "priority": "Medium",
+    "status": "Not Started",
+    "assignee": "Jordan"
+  }
+]

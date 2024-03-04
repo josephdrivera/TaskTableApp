@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}", // assuming your pages are within a 'pages' directory at the root
+    "./app/**/*.{js,ts,jsx,tsx,mdx}", // for any files within the 'app' directory
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", // for your components
+    // "./public/**/*.html", // if you have HTML files in your public directory that use Tailwind classes
+    // any other paths where you use Tailwind CSS classes
   ],
   theme: {
     extend: {

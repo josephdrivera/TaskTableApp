@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Website Redesign",
+    "description": "A project to redesign the corporate website.",
+    "startDate": "2023-12-01",
+    "endDate": "2023-12-31",
+    "tasks": [1]
+  },
+  {
+    "id": 2,
+    "name": "Product Launch",
+    "description": "Coordinating the launch of a new product line.",
+    "startDate": "2023-01-15",
+    "endDate": "2023-02-15",
+    "tasks": [2]
+  }
+]
