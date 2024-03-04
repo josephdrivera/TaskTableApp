@@ -1,6 +1,4 @@
 import React from 'react';
-import TaskList from '../../components/TaskLis';
-import ProgressCard from '../../components/ProgressCard
 import ProjectsList from '../components/ProjectsList';
 
 const Dashboard = ({ tasks, projects }) => {

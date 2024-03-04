@@ -1,4 +1,5 @@
 import '../assets/styles/global.css'
+import Sidebar from '../components/Sidebar'
 
 
 
@@ -8,17 +9,17 @@ export const metadata = {
 	keywords: 'task, manager, app'
 
 }
-const MainLayout = ({children}) => {
-	  return (
-	<html lang={'en'}>
-	<body>
-	<main> {children} </main>
-
-	</body>
-
-
-	</html>
-  )
+const MainLayout = ({ children }) => {
+	return (
+		<div className="flex min-h-screen bg-gray-100">
+			<Sidebar />
+			<main className="flex-grow flex pt-8">
+				<div className="w-full max-w-6xl">
+					{children}
+				</div>
+			</main>
+		</div>
+	)
 }
 
 export default MainLayout;

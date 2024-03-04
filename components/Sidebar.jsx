@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'; // import from next/navigation inst
 
 export default function Sidebar() {
 	const router = useRouter();
+	router.pathname = undefined;
 
 	const links = [
 		{ href: '/dashboard', name: 'Dashboard' },
@@ -56,3 +57,5 @@ export default function Sidebar() {
 		</div>
 	);
 }
+
+
