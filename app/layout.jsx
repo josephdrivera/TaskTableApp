@@ -1,5 +1,5 @@
 import '../assets/styles/global.css'
-import Sidebar from './ui/sidebar'
+
 
 
 export const metadata = {
@@ -12,7 +12,7 @@ const MainLayout = ({children}) => {
 	  return (
 	<html lang={'en'}>
 	<body>
-	<Sidebar />
+
 	<main> {children} </main>
 	</body>
 
