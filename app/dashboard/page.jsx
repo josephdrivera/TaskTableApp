@@ -2,7 +2,6 @@ import React from "react";
 import TaskList from "../../components/TaskList";
 import ProgressCard from "../../components/ProgressCard";
 import ProjectsList from "../../components/ProjectsList";
-import Layout from "../layout";
 
 const DashboardPage = ({ tasks, projects }) => {
 	if (!tasks || !projects) {
@@ -10,7 +9,6 @@ const DashboardPage = ({ tasks, projects }) => {
 	}
 
 	return (
-		<Layout>
 			<div className="container mx-auto px-4 sm:px-8 max-w-6">
 				<div className="py-8">
 					<div className="flex flex-row mb-1 sm:mb-0 justify-between w-full">
@@ -27,7 +25,6 @@ const DashboardPage = ({ tasks, projects }) => {
 					</div>
 				</div>
 			</div>
-		</Layout>
 	);
 };
 

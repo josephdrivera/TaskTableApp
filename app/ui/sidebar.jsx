@@ -1,22 +1,20 @@
 "use client";
-import Link from 'next/link'; // Make sure this import is correct
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const Sidebar = () => {
   const pathname = usePathname();
 
   const isActive = (path) => {
-    return pathname === path ? 'bg-gray-900 text-white' : 'text-gray-300';
+    return pathname === path
+    ? "text-gray-300 bg-gray-900 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 rounded-md mb-2"
+    : "text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 rounded-md mb-2";
   };
 
   return (
-    <div className="h-full w-64 bg-gray-800 text-white flex flex-col">
-      <div className="p-5 border-b border-gray-700">
-        <h1 className="text-xl font-semibold">Brand Logo</h1>
-      </div>
+    <div className="flex">
 
-      <nav className="flex flex-col p-5">
-        {/* Apply legacyBehavior to each Link */}
+      <nav className="bg-gray-800 w-64 min-h-screen p-9">
         <Link href="/dashboard" legacyBehavior>
           <a className={`p-2 mb-2 rounded hover:bg-gray-700 ${isActive('/dashboard')}`}>
             Dashboard
